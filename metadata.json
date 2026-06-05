@@ -1,0 +1,6 @@
+{
+  "name": "Nanotech 3D Explorer",
+  "description": "An interactive 3D science explorer showcasing molecular nanostructures built with Three.js, complete with smooth animations, scroll guides, and zoom controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

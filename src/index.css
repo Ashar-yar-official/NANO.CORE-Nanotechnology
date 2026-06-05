@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@100;300;500;700&family=Inter:wght@200;300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-accent: #00F0FF;
+  --color-accent-dark: #00333d;
+  --color-bg-dark: #050505;
+}
+
+/* Sophisticated Dark Global Styles */
+body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: var(--font-sans);
+}
+
+.depth-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.15;
+  transform: perspective(600px) rotateX(60deg) translateY(-80px);
+  pointer-events: none;
+}
+
+/* Sharp, technical glass containers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px; /* Minimalist sharp corners */
+}
+
+/* Hover effects for buttons to glow in Cyan */
+.cyan-glow-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cyan-glow-hover:hover {
+  background-color: #00F0FF;
+  color: #000000;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+  border-color: #00F0FF;
+}
+
+/* Animations */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+
